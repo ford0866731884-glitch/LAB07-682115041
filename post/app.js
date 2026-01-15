@@ -5,7 +5,8 @@ const inputMessage = document.getElementById("msg");
 const sendBtn = document.getElementById("btnSend");
 const statusDiv = document.getElementById("status");
 const resultPre = document.getElementById("output");
-
+const clearUserBtn = document.getElementById("clearUserBtn");
+clearUserBtn.addEventListener("click", clearUser);
 // 1) Add click event listener
 sendBtn.addEventListener("click", async () => {
   // 2) Read and trim the input value
@@ -56,3 +57,10 @@ sendBtn.addEventListener("click", async () => {
     sendBtn.disabled = false;
   }
 });
+function clearUser() {
+  nameEl.textContent = "";
+  emailEl.textContent = "";
+  avatarEl.src = "";
+  userEl.style.display = "none";
+  statusEl.textContent = "Cleared.";
+}
