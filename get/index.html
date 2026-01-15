@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- TASK A1 (1 pt): Add Tailwind Play CDN in <head> -->
+    <!-- Hint: <script src="...tailwindcss..."></script> -->
+
+    <title>Random User (GET)</title>
+  </head>
+
+  <body class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div
+      class="relative max-w-md w-full bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-8"
+    >
+      <h1 class="text-3xl font-bold mb-4 py-2">Random User (GET)</h1>
+
+      <div class="flex flex-col items-center p-6">
+        <img
+          id="avatar"
+          
+          
+        />
+        <p id="status" class="text-sm text-gray-500 mb-4"></p>
+        <h3 id="user" class="text-lg font-semibold text-gray-900"></h3>
+        <h3 id="name" class="text-lg font-semibold text-gray-900"></h3>
+        <h3 id="email" class="text-lg font-semibold text-gray-900"></h3>
+        <div class="flex gap-3 w-full">
+          <button
+            id="loadUserBtn"
+            class="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-indigo-700 transition"
+          >
+            Load user
+          </button>
+          <button
+            id="clearUserBtn"
+            class="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-red-600 hover:bg-red-700 px-4 py-2.5 text-sm font-medium text-white hover:bg-indigo-700 transition"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
